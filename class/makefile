@@ -1,4 +1,4 @@
 newTest:
-	g++ *.cpp -o newTest;
+	g++ classMemberFunction.cpp -o newTest;
 clean:
 	rm newTest;
