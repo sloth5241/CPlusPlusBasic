@@ -1,4 +1,4 @@
 newTest:
-	g++ classMemberFunction.cpp -o newTest;
+	g++ classAccessModifier.cpp -o newTest;
 clean:
 	rm newTest;
