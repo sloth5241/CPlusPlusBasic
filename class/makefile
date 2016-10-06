@@ -1,4 +1,4 @@
 newTest:
-	g++ classCopyConstructor.cpp -o newTest;
+	g++ classInherit.cpp -o newTest;
 clean:
 	rm newTest;
