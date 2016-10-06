@@ -2,33 +2,30 @@
 #include "classCopyConstructor.h"
 using namespace std;
 
-Line::Line() {
-    cout << "obj is created" << endl;
-}
+int Line::objCount = 0;
 
-Line::Line(const Line &obj)
-{
-    cout << "Copy constructor" << endl;
-}
-
-Line::~Line() {
-    cout << "freeing memory" << endl;
-}
-
-void Line::setLength(double len) {
-    length = len;
+void Line::getObjCount() {
+    cout << "obj count is:" << Line::objCount << endl;
 }
 
 void Line::getLength() {
-    cout << "length is:" << length << endl;
+    cout << "length is:" << *p << endl;
+}
+
+void Line::getQ() {
+    int temp = 200;
+    q = new int;
+    *q = temp;
+    cout << "*q is:" << *q << endl;
 }
 
 int main() {
-    Line line;
-    line.setLength(123.213);
-    line.getLength();
-
-    Line line2 = line;
-    line2.getLength();
+    Line l1(123);
+    Line l2=l1;
+    Line::getObjCount();
+    l1.getLength();
+    l2.getLength();
+    l1.getQ();
+    l2.getQ();
     return 0;
 }

@@ -1,4 +1,4 @@
 newTest:
-	g++ classStaticMember.cpp -o newTest;
+	g++ classCopyConstructor.cpp -o newTest;
 clean:
 	rm newTest;
