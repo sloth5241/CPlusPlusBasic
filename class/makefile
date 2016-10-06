@@ -1,4 +1,4 @@
 newTest:
-	g++ classInherit.cpp -o newTest;
+	g++ classOperatorReload.cpp -o newTest;
 clean:
 	rm newTest;
