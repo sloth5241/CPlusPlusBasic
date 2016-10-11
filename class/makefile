@@ -1,4 +1,4 @@
 newTest:
-	g++ classABC.cpp -o newTest;
+	g++ classADC.cpp -o newTest;
 clean:
 	rm newTest;
