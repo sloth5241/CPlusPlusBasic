@@ -1,4 +1,4 @@
 newTest:
-	g++ extern*.cpp -o newTest;
+	g++ randOpt.cpp -o newTest;
 clean:
 	rm newTest;
