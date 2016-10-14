@@ -1,14 +1,11 @@
 #include <iostream>
-//#include "externDefine.h"
 using namespace std;
 extern int x;
-extern int g_age;
-int main() {
-    //variable come from .cpp file
-    cout << "x come from cpp:" << x << endl; 
 
-    //variable come from .h file
-    g_age = 90; 
-    cout << "g_age come from .h:" << g_age << endl;
+int main() {
+    int i =10;
+    int j =20;
+    cout << "this is going to bomb!,please retreat!!!" << endl;
+    std::cout << "x come from cpp:" << x << std::endl;
     return 0;
 }

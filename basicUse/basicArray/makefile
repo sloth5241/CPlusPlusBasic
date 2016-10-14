@@ -1,4 +1,4 @@
 newTest:
-	g++ randOpt.cpp -o newTest;
+	g++ *.cpp -o newTest;
 clean:
 	rm newTest;
