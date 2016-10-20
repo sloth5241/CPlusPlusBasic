@@ -1,0 +1,13 @@
+helloworld:file1.o file2.o
+	g++ file1.o file2.o -o helloworld
+
+file1.o:file1.cpp file2.h
+	g++ -c file1.cpp -o file1.o
+
+file2.o:file2.cpp file2.h
+	g++ -c file2.cpp -o file2.o
+
+clean:
+	rm -rf *.o helloworld
+
+
