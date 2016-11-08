@@ -28,28 +28,34 @@ char* strcatCharArray(char* c1, char* c2){
 }
 
 int getCharArrayLength(char* c1){
+    cout << "sizeof(c1) :" << sizeof(c1) << endl;
     return strlen(c1);
 }
 
 int main() {
-    //字符数组
-    char char1[n] = "zhao";
-    char char2[n] = "cong";
-    //遍历字符数组
-    ergodicCharArray(char1, char2);
+    try{
+        //字符数组
+        char char1[n] = "zhao";
+        char char2[n] = "cong";
+        //遍历字符数组
+        ergodicCharArray(char1, char2);
 
-    //连接字符数组
-    char* retStrcat = strcatCharArray(char1, char2); 
-    cout << "连接后的字符串为:" << retStrcat << endl;
+        //连接字符数组
+        char* retStrcat = strcatCharArray(char1, char2); 
+        cout << "连接后的字符串为:" << retStrcat << endl;
 
-    //修改字符数组元素
-    char* retModify = modifyCharArray(char1);
-    cout << "修改后的字符数组为:" << retModify << endl;
+        //修改字符数组元素
+        char* retModify = modifyCharArray(char1);
+        cout << "修改后的字符数组为:" << retModify << endl;
 
-    //字符数组长度
-    cout << char1 << endl;
-    int char1Length = getCharArrayLength(char1);
-    cout << "char1的长度为:" << char1Length << endl;
+        //字符数组长度
+        cout << char1 << endl;
+        int char1Length = getCharArrayLength(char1);
+        cout << "char1的长度为:" << char1Length << endl;
+    }
+    catch(const char* msg) {
+        cout << msg << endl;
+    }
 
     return 0;
 }
