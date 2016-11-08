@@ -45,20 +45,25 @@ const char* linkChar(const char* c1, const char* c2){
 }
 
 int main() {
-    const char* c1= "zhao";    
-    char const* c2 = "cong";
+    try{
+        const char* c1= "zhao";    
+        char const* c2 = "cong";
 
-    cout << "c1 is:" << c1 << endl;
-    cout << "c2 is:" << c2 << endl;
-    
-    //遍历字符串     
-    ergodicChar(c1,c2);
-    //修改字符串元素
-    modifyElement(c1,c2);
-    //求字符串长度
-    cout << "c1 长度:" << charLength(c1) << endl;
-    //连接字符串
-    cout << "连接后字符串为:" << linkChar(c1,c2) << endl; 
+        cout << "c1 is:" << c1 << endl;
+        cout << "c2 is:" << c2 << endl;
+
+        //遍历字符串     
+        ergodicChar(c1,c2);
+        //修改字符串元素
+        modifyElement(c1,c2);
+        //求字符串长度
+        cout << "c1 长度:" << charLength(c1) << endl;
+        //连接字符串
+        cout << "连接后字符串为:" << linkChar(c1,c2) << endl; 
+    }
+    catch(const char* msg) {
+        cout << msg << endl;
+    }
     return 0;
 }
 
