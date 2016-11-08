@@ -11,11 +11,16 @@ int* getArray() {
 }
 
 int main() {
-    int *p;
-    p = getArray(); 
+    try{
+        int *p;
+        p = getArray(); 
 
-    for (int i=0; i<4; i++) {
-        cout << p[i] << endl;
+        for (int i=0; i<4; i++) {
+            cout << p[i] << endl;
+        }
+    }
+    catch(const char* msg) {
+        cout << msg << endl; 
     }
     return 0;
 }
