@@ -17,6 +17,6 @@ void func() {
 
     static int number = 0;
     number++;
-    cout << number << " : " << sum << endl;
+    cout << number << " : " << number << endl;
 }
 

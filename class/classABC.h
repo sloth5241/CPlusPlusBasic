@@ -2,7 +2,6 @@
 #define classABC_h
 #include <iostream>
 using namespace std;
-#endif
 
 class Shape{
     protected:
@@ -35,3 +34,4 @@ class Triangle:public Shape {
             return (width*height)/2;
         }
 };
+#endif

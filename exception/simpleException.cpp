@@ -10,15 +10,17 @@ double division(double x, double y) {
 }
 
 int main() {
-    double x,y,z;
-    cout << "input x:";
-    cin >> x;
-    cout << "input y:";
-    cin >> y;
     try{
+        double x,y,z;
+        cout << "input x:";
+        cin >> x;
+        cout << "input y:";
+        cin >> y;
         z = division(x,y); 
         cout << "z=" << z << endl;
-    }catch(const char* msg){
+    }
+    catch(const char* msg){
+        cout << "没有文件需要被释放" << endl;
         cout << msg << endl; 
     }
     return 0;
