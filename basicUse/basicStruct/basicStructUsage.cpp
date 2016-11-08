@@ -3,7 +3,6 @@
 using namespace std;
 
 struct Book {
-    Book *bb;
     string name;
     int age;    
 };
