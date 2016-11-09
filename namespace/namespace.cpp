@@ -11,12 +11,16 @@ namespace second{
     void func() {
         cout << "second namespace" << endl;
     }
+    void test() {
+        cout << "this is test" << endl;
+    }
 }
 
 using namespace first;
 int main() {
     func();
-
+    using namespace second;
+    test();
     second::func();
     return 0;
 }
