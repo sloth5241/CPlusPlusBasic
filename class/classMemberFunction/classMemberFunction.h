@@ -10,10 +10,9 @@ class Box {
     public:
         double length;
         double width;
-        void setLength(double len);
-        void setWidth(double width);
+        void setLength(double);
+        void setWidth(double);
         double returnLength();
-        double returnWidth();
         double getVolum();
 };
 
