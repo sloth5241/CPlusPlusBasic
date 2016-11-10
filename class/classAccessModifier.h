@@ -8,7 +8,6 @@
 #define classAccessModifier_h
 #include <iostream>
 using namespace std;
-#endif /* classAccessModifier.h */
 
 class BigBox {
     public:
@@ -28,3 +27,4 @@ class BigBox {
 class SmallBox:public BigBox {
 }; 
 
+#endif /* classAccessModifier.h */
