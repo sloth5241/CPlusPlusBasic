@@ -2,25 +2,23 @@
 #include <iostream>
 using namespace std;
 
-Line::Line(double len):length(len) {
+Line::Line(double len, double wid) {
     cout << "obj is created" << endl;
-    cout << "length is :" << length << endl;
+    this->length = len;
+    this->width = wid;
 }
 
 Line::~Line(void){
     cout << "obj is deleted" << endl;
 }
 
-void Line::setLength(double len) {
-    length = len;
-}
-
-void Line::getLength() {
+void Line::getMembers() {
     cout << "length is :" << length << endl;
+    cout << "width is :" << width << endl;
 }
 
 int main() {
-    Line line(34344);
-    line.getLength();
+    Line line(123,456);
+    line.getMembers();
     return 0;
 }
