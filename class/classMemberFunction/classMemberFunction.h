@@ -1,20 +1,20 @@
 /*
- * learning member function of c++ class
+ * 类成员的使用 
  */
 #ifndef classMemberFunction_h
 #define classMemberFunction_h
 #include <iostream>
 using namespace std;
-#endif /* classMemberFunction.h */
 
 class Box {
     public:
         double length;
-        double breadth;
-        double height;
+        double width;
         void setLength(double len);
-        void setBreadth(double bre);
-        void setHeight(double hei);
+        void setWidth(double width);
+        double returnLength();
+        double returnWidth();
         double getVolum();
 };
 
+#endif /* classMemberFunction.h */
