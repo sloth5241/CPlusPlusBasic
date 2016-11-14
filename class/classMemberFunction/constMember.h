@@ -7,16 +7,17 @@
 class Screen {
     public:
         Screen() {
-            this->length = 123.123; 
-            this->width = 456.456;
+            _length = 123.123; 
+            _width = 456.456;
         }
         void setLength(double); 
         void setWidth(double); 
         double getLength() const;
         double getWidth() const; 
-        int arr[5];
+        double getArea();
+        int _number;
     private:
-        double length;
-        double width;
+        double _length;
+        double _width;
 };
 #endif  /*constMember_h*/
