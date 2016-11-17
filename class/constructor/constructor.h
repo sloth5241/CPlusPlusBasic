@@ -3,17 +3,15 @@
  */
 #ifndef classConstructor_h
 #define classConstructor_h
-#include <iostream>
-using namespace std;
 
 class Line {
     public:
-        void getMembers(); 
-        Line(double, double);
+        void m_getMembers() const; 
+        Line(double len=0, double wid=0);
         ~Line(void);
     private:
-        double length;    
-        double width;
+        double m_length;    
+        double m_width;
 };
 
 #endif /* classConstructor.h */

@@ -1,43 +1,16 @@
-/*
- */
-
-#ifdef classCopyConstructor_h
-#define classCopyConstructor_h
+#ifndef copyConstructor_h
+#define copyConstructor_h
 #include <iostream>
-#endif /* classCopyConstructor.h */
 using namespace std;
 
 class Line {
     public:
-        Line(double len){
-            cout << "obj is crearted" << endl;
-            objCount++;
-            this->length = len;
-           p = new int;
-           *p = this->length;
-        }
-
-        Line(const Line& C) {
-            objCount++; 
-            this->length = C.length;
-            p = new int;
-            *p = *C.p;
-        }
-
-        ~Line(){
-            delete p;
-            delete q;
-            cout << "obj is free" << endl;
-            objCount--;
-        }
-
-        static void getObjCount();
-        void getLength();
-        void getQ(); 
+        Line(double len=0);
+        Line(const Line& obj);
+        void m_getLength() const;
+        ~Line();
     private:
-        static int objCount;
-        int *p;
-        int *q;
-        double length;
+        double m_length;
+        double* ptr;
 };
-
+#endif /* copyConstructor.h */
