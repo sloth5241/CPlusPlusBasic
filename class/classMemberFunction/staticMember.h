@@ -16,8 +16,8 @@ class Account {
             m_amount = amount;
             m_owner = owner;
         }
-        string getOwner() const { return m_owner;}
-        static double getRate() { return( m_rate ); }
+        string getOwner() const;
+        static double getRate();
     private:
         static double m_rate;
         double m_amount;
