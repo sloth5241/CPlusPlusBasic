@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
 void stringCopy(string, string);
 void stringLink(string, string);
 void stringLen(string);
@@ -9,6 +8,7 @@ void stringEmpty(string,string,string);
 void line() {
     cout << "--------------------" << endl;
 }
+void getLines();
 
 int main() {
     string str1 = "Hello";
@@ -28,6 +28,9 @@ int main() {
     line();
     //判断是否为空
     stringEmpty(str1, str4, str5);
+    line();
+
+    getLines();
     line();
     return 0;
 }
@@ -53,4 +56,14 @@ void stringEmpty(string s1, string s4, string s5){
     cout << "s1 is empty:" << s1.empty() << endl;
     cout << "s4 is empty:" << s4.empty() << endl;
     cout << "s5 is empty:" << s5.empty() << endl;
+}
+void getLines() {
+    string word;
+    static int num = 0;
+    while(num < 3) {
+        getline(cin,word);
+        cout << word << endl;
+        num++;
+    }
+   
 }
