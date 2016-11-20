@@ -14,7 +14,9 @@ class Animal{
 
 class Fish:public Animal {
     public:
-        Fish(string name, int age);
+        Fish(string name, int age, string country);
         void m_getInfo() const;
+    private:
+        string m_country;
 };
 #endif
