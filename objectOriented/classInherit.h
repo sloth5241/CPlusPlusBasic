@@ -2,7 +2,6 @@
 #define classInherit_h
 #include <iostream>
 using namespace std;
-#endif
 
 class Shape {
     public:
@@ -24,3 +23,4 @@ class Rectangle:public Shape {
         double getArea();
 };
 
+#endif
