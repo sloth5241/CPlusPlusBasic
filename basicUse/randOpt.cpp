@@ -2,16 +2,28 @@
 #include<time.h>
 #include <iostream>
 using namespace std;
-const int n = 5;
-double random(double start, double end) {
-    return start+(end-start)*rand()/(RAND_MAX + 1.0);
+
+void getRand() {
+    int start = 1;
+    int end = 33;
+    int j = start + rand() % (end-start+1); 
+    cout << j << " ";
 }
 
-int main() {
-    srand(time(0));
-    for (int i=1; i<n; i++) {
-        int j = int(random(1,32));
-        cout << j << endl;
+int main(int argc, char* argv[]) {
+    int loopcount = 1;
+    if(argv[1]) {
+       loopcount = stoi(argv[1]);
     }
+    else{
+        loopcount = 1;
+    }
+
+    srand((unsigned)time(0));
+    for (int i=1; i<=loopcount; i++) {
+        getRand();
+    }
+    cout << endl;
+    
     return 0;
 }
